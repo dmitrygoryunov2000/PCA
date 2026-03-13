@@ -1,9 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Bash(python -c \":*)",
-      "Bash(python -c \"import json; nb=json.load\\(open\\(''monte C.ipynb''\\)\\); print\\(f''Total cells: {len\\(nb[\"\"cells\"\"]\\)}''\\)\")",
-      "Bash(python _fix_notebook.py)"
-    ]
-  }
-}
