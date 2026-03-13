@@ -1,6 +1,6 @@
 "# TTF Forward Curve PCA Analysis
 
-> Principal Component Analysis of HEREN TTF natural gas forward curves with Monte Carlo simulation and rolling stability analysis.
+> Principal Component Analysis of  TTF natural gas forward curves with Monte Carlo simulation and rolling stability analysis.
 
 ---
 
@@ -23,7 +23,7 @@
 
 ## Overview
 
-This project applies **Principal Component Analysis (PCA)** to the HEREN TTF (Title Transfer Facility) natural gas forward curve to decompose price dynamics into interpretable risk factors. The analysis covers:
+This project applies **Principal Component Analysis (PCA)** to the  TTF (Title Transfer Facility) natural gas forward curve to decompose price dynamics into interpretable risk factors. The analysis covers:
 
 1. **Full PCA** on 25 forward price tenors
 2. **Spread-inclusive PCA** incorporating summer-winter seasonality
@@ -38,8 +38,8 @@ The TTF is the most liquid European natural gas benchmark, and understanding its
 
 | Property | Detail |
 |----------|--------|
-| **Source** | HEREN (ICIS) TTF forward price quotes |
-| **File** | `Heren quotes.xlsx` (Sheet1) |
+| **Source** |   TTF forward price quotes |
+| **File** | ` quotes.xlsx` (Sheet1) |
 | **Rows** | 4,654 trading days |
 | **Columns** | 25 tenors + Date index |
 | **Period** | ~2006–2025 |
@@ -213,7 +213,7 @@ ttf-pca-analysis/
 |-- .gitignore                     # Git ignore rules
 |
 |-- data/
-|   +-- heren_quotes.csv           # Raw TTF forward prices (export from Sheet1)
+|   +-- _quotes.csv           # Raw TTF forward prices (export from Sheet1)
 |
 |-- src/
 |   |-- config.py                  # Configuration & parameters
@@ -228,7 +228,7 @@ ttf-pca-analysis/
 |   |-- mc_simulation.csv          # Monte Carlo VaR statistics
 |   +-- rolling_pca.csv            # Rolling window stability analysis
 |
-+-- Heren quotes.xlsx              # Original Excel workbook (optional)
++--  quotes.xlsx              # Original Excel workbook (optional)
 ```
 
 ---
@@ -291,7 +291,7 @@ To extract CSVs from the workbook:
 ```python
 import openpyxl, csv, os
 
-wb = openpyxl.load_workbook(""Heren quotes.xlsx"", data_only=True)
+wb = openpyxl.load_workbook("" quotes.xlsx"", data_only=True)
 os.makedirs(""results"", exist_ok=True)
 
 for name in wb.sheetnames:
@@ -306,7 +306,7 @@ for name in wb.sheetnames:
 
 ## License
 
-This project is provided for educational and research purposes. The underlying HEREN/ICIS price data is proprietary and subject to the data provider's license terms.
+This project is provided for educational and research purposes. The underlying /ICIS price data is proprietary and subject to the data provider's license terms.
 
 ---
 
