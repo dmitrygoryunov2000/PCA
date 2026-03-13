@@ -306,8 +306,8 @@ for name in wb.sheetnames:
 
 ## License
 
-This project is provided for educational and research purposes. The underlying /ICIS price data is proprietary and subject to the data provider's license terms.
+This project is provided for educational and research purposes. The underlying price data is proprietary and subject to the data provider's license terms.
 
 ---
 
-*Generated from PCA analysis workbook — see Conversation_Log sheet for full methodology discussion.*"
+
