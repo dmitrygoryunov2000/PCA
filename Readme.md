@@ -25,6 +25,7 @@
 
 ## Overview
 
+
 This project applies **Principal Component Analysis (PCA)** to the TTF (Title Transfer Facility) natural gas forward curve to decompose price dynamics into interpretable risk factors.
 
 **Input:** `quotes.xlsx` — daily TTF forward prices across up to 25 tenors (spot, monthly, quarterly, seasonal, calendar year)
